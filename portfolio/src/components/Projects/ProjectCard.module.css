@@ -1,0 +1,78 @@
+/* Existing styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  max-width: 345px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0; /* Start with opacity 0 for animation */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: slideIn 0.5s forwards; /* Apply the slideIn animation */
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+  to {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Slide to the original position */
+  }
+}
+
+/* Delay each card's animation */
+.container:nth-child(1) {
+  animation-delay: 0.5s; /* First card appears after 0.5s */
+}
+
+.container:nth-child(2) {
+  animation-delay: 1s; /* Second card appears after 1s */
+}
+
+.container:nth-child(3) {
+  animation-delay: 1.5s; /* Third card appears after 1.5s */
+}
+
+/* Rest of your existing styles */
+.image {
+  margin-bottom: 26px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ddd;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: #576cbc;
+  padding: 6px 22px;
+  transition: background 0.3s ease;
+}
+
+.link:hover {
+  background: #415a96;
+}
