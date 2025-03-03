@@ -6,7 +6,7 @@
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
-  width: 400px;
+  width: 300px;
   height: auto; /* Allow height to adjust based on content */
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -54,7 +54,7 @@
 }
 
 .imageContainer {
-  height: 600px; /* Set image container height to 600px as requested */
+  height: 400px; /* Set image container height to 600px as requested */
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -62,7 +62,7 @@
 
 .image {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -155,7 +155,7 @@
 
   .description {
     font-size: 18px;
-    -webkit-line-clamp: 6; /* Show more text */
+    /* -webkit-line-clamp: 6; Show more text */
   }
 
   .link {
@@ -183,7 +183,7 @@
 
   .description {
     font-size: 22px; /* Much larger font size */
-    -webkit-line-clamp: 8; /* Allow more lines of text to be visible */
+    /* -webkit-line-clamp: 8;  */
     margin-bottom: 24px;
   }
 
