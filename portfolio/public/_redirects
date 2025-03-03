@@ -1,3 +1,4 @@
+/*   /index.html  200
 [built]
 command = "npm run build"
 publish = "/build"
