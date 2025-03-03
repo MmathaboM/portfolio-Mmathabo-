@@ -87,7 +87,6 @@
   flex-grow: 1;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -158,7 +157,7 @@
     font-size: 18px;
     -webkit-line-clamp: 6; /* Show more text */
   }
-  
+
   .link {
     padding: 10px 20px;
     font-size: 16px;
@@ -216,7 +215,7 @@
     font-size: 24px;
     margin-bottom: 30px;
   }
-  
+
   .links {
     gap: 30px;
   }
