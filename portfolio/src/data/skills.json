@@ -1,0 +1,27 @@
+[
+  {
+    "title": "HTML"
+  },
+  {
+    "title": "CSS"
+  },
+  {
+    "title": "React"
+  },
+  {
+    "title": "JavaScript"
+  },
+
+  {
+    "title": "Vue"
+  },
+  {
+    "title": "C#",
+    "imageSrc": "assets/skills/c-sharp-c.svg"
+  },
+
+  {
+    "title": "GitHub"
+  
+  }
+]

@@ -1,4 +1,4 @@
-/* Existing styles */
+/* ProjectCard.module.css */
 .container {
   display: flex;
   flex-direction: column;
@@ -6,73 +6,125 @@
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
-  max-width: 345px;
+  width: 400px;
+  height: auto; /* Allow height to adjust based on content */
   text-align: center;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0; /* Start with opacity 0 for animation */
-  transform: translateX(-100%); /* Start off-screen to the left */
-  animation: slideIn 0.5s forwards; /* Apply the slideIn animation */
+  transition: transform 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.5s forwards;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
 }
 
-/* Animation keyframes */
+.container:hover {
+  transform: translateY(-10px);
+}
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers content */
+  gap: 20px; /* Adds space between cards */
+}
 @keyframes slideIn {
   to {
-    opacity: 1; /* Fade in */
-    transform: translateX(0); /* Slide to the original position */
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 /* Delay each card's animation */
 .container:nth-child(1) {
-  animation-delay: 0.5s; /* First card appears after 0.5s */
+  animation-delay: 0.5s;
 }
 
 .container:nth-child(2) {
-  animation-delay: 1s; /* Second card appears after 1s */
+  animation-delay: 1s;
 }
 
 .container:nth-child(3) {
-  animation-delay: 1.5s; /* Third card appears after 1.5s */
+  animation-delay: 1.5s;
 }
 
-/* Rest of your existing styles */
-.image {
-  margin-bottom: 26px;
-  width: 100%;
+.container:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.imageContainer {
+  height: 600px; /* Set image container height to 600px as requested */
+  overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
 }
 
 .title {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 12px;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #ddd;
+  flex-grow: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .links {
-  width: 100%;
-  margin-top: 26px;
+  margin-top: 16px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .link {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 100px;
-  background: #576cbc;
-  padding: 6px 22px;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .link:hover {
-  background: #415a96;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+/* ProjectSlider.module.css */
+.projectCard {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.projectCard.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 1024px) { 
+  .projects { 
+    flex-wrap: nowrap; /* Ensures all projects stay in one row */
+    justify-content: space-between; /* Distributes them evenly */
+  }
 }

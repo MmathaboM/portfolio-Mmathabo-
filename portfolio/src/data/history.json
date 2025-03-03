@@ -1,0 +1,17 @@
+[
+  {
+    "role": "Software Developer Intern",
+    "organisation": "Softidoc",
+    "location": "Pretoria, GP",
+    "startDate": "2024",
+    "endDate": "Present",
+    "experiences": [
+      "Built UIs with Vue.js & React.js.",
+      "Used Pinia & Redux for state management.",
+      "Optimized UI performance.",
+      "Created RESTful APIs with C# & ASP.NET Core.",
+      "Managed databases with MySQL & SQL Server."
+    ],
+    "icon": "FaBriefcase"
+  }
+]
