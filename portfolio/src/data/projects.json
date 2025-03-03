@@ -5,7 +5,7 @@
     "description": "This project involved developing a comprehensive digital platform for a security services company. The solution features a responsive website with service descriptions, client testimonials, and a secure client portal. .",
 
     "demo": "https://jonape247.netlify.app/",
-    "source": "https://github.com/MmathaboM/JonapeSecurity"
+    "source": ""
   },
   {
     "title": "Weather APP",
@@ -29,6 +29,6 @@
     "description": "This health science website is an educational platform focused on speech-language pathology and audiology, offering detailed information on communication disorders, hearing health, and therapeutic interventions for professionals and the public..",
 
     "demo": "https://mphahlelemp.netlify.app",
-    "source": "https://github.com/MmathaboM/Speech-therapy-and-audiology"
+    "source": ""
   }
 ]
