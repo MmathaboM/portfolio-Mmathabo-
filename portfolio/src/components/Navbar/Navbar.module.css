@@ -58,14 +58,13 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Media query for screens up to 991px */
 @media (max-width: 991px) {
   .menu {
     position: fixed;
     top: 0;
     right: -100%; /* Hide the menu off-screen by default */
-    width: 70%; /* Adjust the width as needed */
+    width: 50%; /* Reduce the width to 50% */
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     flex-direction: column;
@@ -109,7 +108,7 @@
   }
 
   .menu {
-    width: 80%; /* Increase the width of the menu for smaller screens */
+    width: 60%; /* Adjust the width to 60% for smaller screens */
   }
 
   .menuItems a {
@@ -118,5 +117,12 @@
 
   .menuItems li {
     margin: 0.8rem 0; /* Adjust margin for menu items */
+  }
+  .menu {
+    display: flex;
+  }
+  
+  .menuOpen {
+    right: 0; /* Bring the menu on-screen */
   }
 }
