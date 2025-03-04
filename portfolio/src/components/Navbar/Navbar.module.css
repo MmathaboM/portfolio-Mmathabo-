@@ -1,10 +1,10 @@
 @import "../../vars.css";
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /* background-color: #333; */
   position: relative;
 }
 
@@ -47,6 +47,7 @@
 .menuItems a:hover {
   color: #3fbbc0;
 }
+
 .animated-section {
   opacity: 0;
   transform: translateY(50px);
@@ -58,8 +59,7 @@
   transform: translateY(0);
 }
 
-
-/* Media query for mobile screens */
+/* Media query for screens up to 991px */
 @media (max-width: 991px) {
   .menu {
     position: fixed;
@@ -91,5 +91,32 @@
   .menuBtn {
     display: block; /* Show the hamburger icon on mobile */
     z-index: 1001; /* Ensure it appears above the menu */
+  }
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Reduce font size for the title */
+  }
+
+  .menuBtn {
+    font-size: 1.5rem; /* Reduce font size for the menu button */
+  }
+
+  .menu {
+    width: 80%; /* Increase the width of the menu for smaller screens */
+  }
+
+  .menuItems a {
+    font-size: 0.9rem; /* Reduce font size for menu items */
+  }
+
+  .menuItems li {
+    margin: 0.8rem 0; /* Adjust margin for menu items */
   }
 }

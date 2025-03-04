@@ -137,7 +137,7 @@ export const Contact = () => {
             <div className={styles.iconWrapper}>
               <FaPhone />
             </div>
-            <p>076 325 324</p>
+            <p>076 325 3244</p>
           </div>
 
           <div className={styles.infoItem}>
