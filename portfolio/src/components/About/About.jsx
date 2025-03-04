@@ -5,7 +5,7 @@ import resumePdf from "../../assets/hero/Mmathabo M Resume 2025  (4).pdf"; // Im
 
 export const About = () => {
   return (
-    <section  className={`animated-section ${styles.container}`} id="about">
+    <section className={`animated-section ${styles.container}`} id="about">
       <h2 className={styles.title}>About Me</h2>
       <div className={styles.subtitle}>
         <div className={styles.divider}>
@@ -18,11 +18,16 @@ export const About = () => {
           <img src={about} alt="about image" className={styles.aboutImage} />
         </div>
 
-     <div className={styles.textContent}>
-  <p className={styles.bio}>
-    I’m Mmathabo Mphahlele, a passionate Software Developer with a BSc in Mathematics, specializing in Computer Science and Statistics. I excel in front-end and back-end development, using technologies like Vue.js, React.js, and C#. I’m dedicated to building efficient, scalable, and user-friendly applications, and I’m always eager to learn new technologies to stay ahead in the tech industry.
-  </p>
-
+        <div className={styles.textContent}>
+          <p className={styles.bio}>
+            I’m Mmathabo Mphahlele, a passionate Software Developer with a BSc
+            in Mathematics,majoring in Computer Science and Statistics. My
+            passion lies in crafting efficient, user-friendly applications that
+            make a meaningful impact. I thrive on continuous learning and growth
+            within the ever-evolving tech industry, and I’m always eager to
+            embrace new challenges and opportunities to further expand my
+            expertise.
+          </p>
 
           <div className={styles.highlights}>
             <h3>Here are a Few Highlights:</h3>
@@ -51,7 +56,6 @@ export const About = () => {
               </li>
             </ul>
           </div>
-
           <div className={styles.buttons}>
             <a
               href="mailto:mmathabom99@gmail.com"
