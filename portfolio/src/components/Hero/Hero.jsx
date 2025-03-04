@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-// import profileImage from "../../assets/hero/profile.jpeg";
-import resumePdf from "../../assets/hero/Mmathabo M Resume 2025  (4).pdf";
+import profileImage from "../../assets/hero/profile.jpeg";
 // import profileImage from "../../assets/hero/profilepic.jpeg";
-import profileImage from "../../assets/hero/profilepp1.jpeg";
+import resumePdf from "../../assets/hero/Mmathabo M Resume 2025  (4).pdf";
 
 export const Hero = () => {
   const [role, setRole] = useState("Software Developer");
@@ -78,7 +77,7 @@ export const Hero = () => {
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               fontWeight: "bold",
-              fontSize: "34px",
+              fontSize: "24px", /* Reduced font size for mobile */
               textShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
             }}
           >

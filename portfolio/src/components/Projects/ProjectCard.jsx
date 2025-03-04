@@ -6,14 +6,14 @@ import styles from "./ProjectCard.module.css";
 import jonapeImage from "../../assets/projects/jonape.jpeg";
 import weatherAppImage from "../../assets/projects/weather.jpeg";
 import worldClockImage from "../../assets/projects/everytimezone.jpeg";
-import healthCareImage from "../../assets/projects/prince.jpeg";
+import healthCareImage from "../../assets/projects/P1.jpeg";
 
 // Create an image mapping object
 const projectImages = {
   "Security Company Website": jonapeImage,
   "Weather APP": weatherAppImage,
   "World Clock": worldClockImage,
-  "Health Care": healthCareImage,
+  "SLP & Audiology Care": healthCareImage,
 };
 
 export const ProjectCard = ({

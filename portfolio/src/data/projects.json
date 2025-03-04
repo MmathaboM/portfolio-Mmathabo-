@@ -2,7 +2,7 @@
   {
     "title": "Security Company Website",
     "imageSrc": "/assets/projects/projectimage.jpeg",
-    "description": "This project involved developing a comprehensive digital platform for a security services company. The solution features a responsive website with service descriptions, client testimonials, and a secure client portal. .",
+    "description": "This project involved developing a comprehensive digital platform for a security services company. The solution features a responsive website with service descriptions, client testimonials, and a secure client portal.",
 
     "demo": "https://jonape247.netlify.app/",
     "source": ""
@@ -10,7 +10,7 @@
   {
     "title": "Weather APP",
     "imageSrc": "/assets/projects/project.jpeg",
-    "description": "The Weather App is an intuitive application that provides real-time weather information and forecasts for locations worldwide. Users can search for cities, save favorite locations, and receive detailed meteorological data including temperature, humidity, wind speed, and precipitation probability..",
+    "description": "The Weather App is an intuitive application that provides real-time weather information and forecasts for locations worldwide. Users can search for cities, save favorite locations, and receive detailed meteorological data including temperature, humidity, wind speed, and precipitation probability.",
 
     "demo": "https://skieswithmmathabo.netlify.app/",
     "source": "https://github.com/MmathaboM/weatherapp"
@@ -18,15 +18,15 @@
   {
     "title": "World Clock",
     "imageSrc": "/assets/projects/project.jpeg",
-    "description": "This World Clock application allows users to track time across multiple time zones simultaneously. The clean interface displays the current time for selected cities around the world, with options to add and remove locations as needed. .",
+    "description": "This World Clock application allows users to track time across multiple time zones simultaneously. The clean interface displays the current time for selected cities around the world, with options to add and remove locations as needed.",
 
     "demo": "https://everytimezone.netlify.app/",
     "source": "https://github.com/MmathaboM/world-clock"
   },
   {
-    "title": "Health Care",
+    "title": "SLP & Audiology Care",
     "imageSrc": "/assets/projects/project.jpeg",
-    "description": "This health science website is an educational platform focused on speech-language pathology and audiology, offering detailed information on communication disorders, hearing health, and therapeutic interventions for professionals and the public..",
+    "description": "This health science website is an educational platform focused on speech-language pathology and audiology, offering detailed information on communication disorders, hearing health, and therapeutic interventions for professionals and the public.",
 
     "demo": "https://mphahlelemp.netlify.app",
     "source": ""

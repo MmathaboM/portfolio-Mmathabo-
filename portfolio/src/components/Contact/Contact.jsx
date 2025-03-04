@@ -1,5 +1,13 @@
 import React, { useState, useRef } from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
+// import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from "react-icons/fa";
+
 import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 
@@ -54,7 +62,7 @@ export const Contact = () => {
     <section id="contact" className={styles.container}>
       <div className={styles.formSection}>
         <h2 className={styles.title}>
-          Contact <span className={styles.highlight}>Us</span>
+          Contact <span className={styles.highlight}>Me</span>
         </h2>
 
         <form ref={form} className={styles.form} onSubmit={handleSubmit}>
@@ -119,8 +127,9 @@ export const Contact = () => {
 
       <div className={styles.infoSection}>
         <p className={styles.infoText}>
-          For questions, technical assistance, or collaboration opportunities
-          via the contact information provided.
+          I’m always open to discussing new projects, collaborations, or any
+          inquiries. Feel free to reach out—let’s connect and create something
+          amazing!
         </p>
 
         <div className={styles.contactInfo}>
@@ -128,7 +137,7 @@ export const Contact = () => {
             <div className={styles.iconWrapper}>
               <FaPhone />
             </div>
-            <p>076325324</p>
+            <p>076 325 324</p>
           </div>
 
           <div className={styles.infoItem}>
@@ -144,6 +153,36 @@ export const Contact = () => {
             </div>
             <p>Johannesburg, South Africa</p>
           </div>
+
+          {/* LinkedIn Account Link */}
+          <div className={styles.infoItem}>
+            <div className={styles.iconWrapper}>
+              <FaLinkedin />
+            </div>
+            <a
+              href="www.linkedin.com/in/mmathabo-mphahlele-986836283"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="white"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+
+          {/* GitHub Account Link */}
+          {/* <div className={styles.infoItem}>
+            <div className={styles.iconWrapper}>
+              <FaGithub />
+            </div>
+            <a
+              href="https://github.com/your-github-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              GitHub Profile
+            </a>
+          </div> */}
         </div>
       </div>
     </section>

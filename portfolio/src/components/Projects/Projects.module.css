@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -41,3 +41,14 @@
 }
 
 
+@media (min-width: 1024px) {
+  .projects {
+    flex-wrap: nowrap; /* Keeps projects in one row */
+    justify-content: space-between;
+    gap: 20px; /* Adjusts spacing between projects */
+  }
+
+  .container {
+    width: 80%; /* Reduces width slightly for better alignment */
+  }
+}

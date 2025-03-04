@@ -5,7 +5,7 @@ import resumePdf from "../../assets/hero/Mmathabo M Resume 2025  (4).pdf"; // Im
 
 export const About = () => {
   return (
-    <section className={styles.container} id="about">
+    <section  className={`animated-section ${styles.container}`} id="about">
       <h2 className={styles.title}>About Me</h2>
       <div className={styles.subtitle}>
         <div className={styles.divider}>
@@ -18,19 +18,11 @@ export const About = () => {
           <img src={about} alt="about image" className={styles.aboutImage} />
         </div>
 
-        <div className={styles.textContent}>
-          <p className={styles.bio}>
-            I’m Mmathabo Mphahlele, a passionate Software Developer dedicated to
-            building innovative and impactful solutions. I hold a BSc in
-            Mathematics, with a major in Computer Science and Statistics, from
-            the University of Limpopo. My expertise lies in front-end and
-            back-end development, specializing in technologies like Vue.js,
-            React.js, and C#. I am deeply committed to creating efficient,
-            scalable, and user-friendly applications.Additionally, I have a
-            strong interest in learning new technologies and programming
-            languages to expand my skill set and stay ahead in the ever-evolving
-            tech landscape.
-          </p>
+     <div className={styles.textContent}>
+  <p className={styles.bio}>
+    I’m Mmathabo Mphahlele, a passionate Software Developer with a BSc in Mathematics, specializing in Computer Science and Statistics. I excel in front-end and back-end development, using technologies like Vue.js, React.js, and C#. I’m dedicated to building efficient, scalable, and user-friendly applications, and I’m always eager to learn new technologies to stay ahead in the tech industry.
+  </p>
+
 
           <div className={styles.highlights}>
             <h3>Here are a Few Highlights:</h3>

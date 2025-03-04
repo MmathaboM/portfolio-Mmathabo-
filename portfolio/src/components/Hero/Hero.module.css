@@ -3,20 +3,19 @@
 .container {
   position: relative;
   display: flex;
+  flex-direction: column-reverse; /* Stack content and image vertically */
   align-items: center;
-  justify-content: space-between;
-  margin-top: 49px;
+  justify-content: center;
+  margin-top: 20px; /* Reduced margin for mobile */
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%; /* Reduced margin for mobile */
+  margin-right: 5%; /* Reduced margin for mobile */
 }
 
 .heroImg {
-  /* Adjust size as needed */
-  height: 500px;
-  width: 100%;
+  height: 300px; /* Reduced height for mobile */
+  width: 300px; /* Reduced width for mobile */
   z-index: 1;
-
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -24,20 +23,22 @@
   border-radius: 50%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle */
   border: 2px solid #fff; /* Optional border */
+  margin-bottom: 20px; /* Added margin for spacing */
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center align for mobile */
+  text-align: center; /* Center text for mobile */
   color: var(--color-text);
   z-index: 1;
 }
 
 .title {
-  font-size: 72px;
+  font-size: 36px; /* Reduced font size for mobile */
   font-weight: 900;
-  margin-bottom: 33px;
+  margin-bottom: 20px; /* Reduced margin for mobile */
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
@@ -49,9 +50,9 @@
 }
 
 .description {
-  font-size: 30px;
+  font-size: 20px; /* Reduced font size for mobile */
   font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  margin-bottom: 30px; /* Reduced margin for mobile */
 }
 
 .contactBtn {
@@ -59,29 +60,31 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 30px;
+  font-size: 20px; /* Reduced font size for mobile */
   font-weight: 600;
-  padding: 17px 26px;
+  padding: 12px 20px; /* Adjusted padding for mobile */
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px; /* Added margin for spacing */
 }
+
 .resumeBtn {
   text-decoration: none;
   background: linear-gradient(
     90deg,
     var(--color-primary),
     var(--color-secondary)
-  ); /* Gradient background */
+  );
   color: var(--color-text);
-  border-radius: 50px; /* Rounded edges */
-  font-size: 24px; /* Slightly smaller font size */
+  border-radius: 50px;
+  font-size: 20px; /* Reduced font size for mobile */
   font-weight: 600;
-  padding: 15px 30px; /* Adjust padding for better proportions */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  border: none; /* Remove default border */
-  cursor: pointer; /* Pointer cursor on hover */
+  padding: 12px 20px; /* Adjusted padding for mobile */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
   position: relative;
-  overflow: hidden; /* For the hover effect */
+  overflow: hidden;
 }
 
 .resumeBtn::before {
@@ -95,33 +98,23 @@
     90deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
-  ); /* Shiny overlay */
-  transition: left 0.5s ease; /* Smooth slide effect */
+  );
+  transition: left 0.5s ease;
 }
 
 .resumeBtn:hover::before {
-  left: 100%; /* Slide the shiny overlay to the right */
+  left: 100%;
 }
 
 .resumeBtn:hover {
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .resumeBtn:active {
-  transform: translateY(0); /* Reset lift when clicked */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow when clicked */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-/* .heroImg {
-  width: 50%;
-  z-index: 1;
-
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-} */
 
 @keyframes floating {
   0% {
@@ -170,5 +163,23 @@
 
   .content {
     align-items: center;
+  }
+}
+
+/* Media queries for laptop and desktop screens */
+@media screen and (min-width: 831px) {
+  .heroImg {
+    height: 400px; /* Increased height for laptop and desktop */
+    width: 400px; /* Increased width for laptop and desktop */
+  }
+
+  .title {
+    font-size: 48px; /* Increased font size for laptop and desktop */
+    margin-bottom: 30px; /* Increased margin for laptop and desktop */
+  }
+
+  .description {
+    font-size: 24px; /* Increased font size for laptop and desktop */
+    margin-bottom: 40px; /* Increased margin for laptop and desktop */
   }
 }

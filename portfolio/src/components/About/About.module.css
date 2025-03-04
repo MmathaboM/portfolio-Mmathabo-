@@ -115,7 +115,7 @@
   margin-top: 30px;
 }
 
-.btnPrimary, 
+.btnPrimary,
 .btnSecondary {
   padding: 14px 28px;
   border-radius: 50px;
@@ -155,21 +155,22 @@
     margin-right: 5%;
     width: 90%;
   }
-  
+
   .content {
     flex-direction: column;
   }
-  
+
   .imageContainer {
     max-width: 80%;
     margin: 0 auto 30px;
   }
-  
+
   .title {
     font-size: 2.5rem;
   }
-  
-  .bio, .highlightsList li {
+
+  .bio,
+  .highlightsList li {
     font-size: 1.1rem;
   }
 }
@@ -178,14 +179,74 @@
   .container {
     padding: 30px 20px;
   }
-  
+
   .buttons {
     flex-direction: column;
     align-items: center;
   }
-  
-  .btnPrimary, .btnSecondary {
+
+  .btnPrimary,
+  .btnSecondary {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px; /* Reduced padding for smaller screens */
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .title {
+    font-size: 2rem; /* Smaller font size for mobile */
+    margin-bottom: 10px; /* Reduced margin */
+  }
+
+  .subtitle h3 {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .bio {
+    font-size: 1rem; /* Smaller font size for mobile */
+    line-height: 1.5; /* Adjusted line height for better readability */
+  }
+
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    gap: 20px; /* Reduced gap between elements */
+  }
+
+  .imageContainer {
+    max-width: 100%; /* Full width for image on mobile */
+    margin-bottom: 20px; /* Added margin for spacing */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Reduced gap between buttons */
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%; /* Full-width buttons for mobile */
+    padding: 12px 24px; /* Adjusted padding */
+    font-size: 1rem; /* Smaller font size for buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px; /* Further reduced padding for very small screens */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Even smaller font size for very small screens */
+  }
+
+  .bio {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
   }
 }

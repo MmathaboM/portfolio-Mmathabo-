@@ -45,11 +45,13 @@
 
 .historyItemDetails {
   font-family: var(--font-roboto);
+  font-size: 12px; /* Reduced from 20px */
+  font-weight: 100
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .historyItemDetails p {
@@ -60,7 +62,7 @@
 .historyItemDetails ul {
   margin-top: 6px;
   list-style-position: inside;
-  font-size: 25px;
+  font-size: 20px;
   list-style-type: disc;
   margin-left: 17px;
 }
