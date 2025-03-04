@@ -155,7 +155,7 @@ export const Contact = () => {
           </div>
 
           {/* LinkedIn Account Link */}
-          <div className={styles.infoItem}>
+          {/* <div className={styles.infoItem}>
             <div className={styles.iconWrapper}>
               <FaLinkedin />
             </div>
@@ -167,7 +167,7 @@ export const Contact = () => {
             >
               LinkedIn Profile
             </a>
-          </div>
+          </div> */}
 
           {/* GitHub Account Link */}
           {/* <div className={styles.infoItem}>
