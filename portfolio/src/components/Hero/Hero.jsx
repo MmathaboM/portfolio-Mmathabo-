@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import profileImage from "../../assets/hero/profile.jpeg";
-// import profileImage from "../../assets/hero/profilepic.jpeg";
+// import profileImage from "../../assets/hero/profile.jpeg";
+import profileImage from "../../assets/hero/h2.jpeg";
 import resumePdf from "../../assets/hero/Mmathabo M Resume 2025  (4).pdf";
 
 export const Hero = () => {
